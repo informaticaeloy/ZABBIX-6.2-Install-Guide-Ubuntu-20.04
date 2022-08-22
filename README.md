@@ -37,8 +37,23 @@ sudo apt-get install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf 
 
 ...
 
-...
-
 ![image](https://user-images.githubusercontent.com/20743678/185896267-c13c22cf-38c7-430e-add6-0304650dc8a7.png)
+
+### 3. Instalar MySQL server
+
+```shell
+apt-get install mysql-server
+```
+
+![image](https://user-images.githubusercontent.com/20743678/185899040-86690bd1-cbaa-4d07-86db-51182256d534.png)
+
+
+### 4. Crear la base de datos inicial
+
+> Nos aseguramos que MySql está UP y corriendo
+
+```shell
+mysql -uroot -p
+```
 
 
