@@ -71,14 +71,26 @@ exit
 sudo mysql_secure_installation
 ```
 
+![image](https://user-images.githubusercontent.com/20743678/185901446-a46e4c96-64b7-4aec-aa69-a57821b9794a.png)
+
+![image](https://user-images.githubusercontent.com/20743678/185901679-1e906ac2-0cfe-4a1a-be88-cb457b20f257.png)
+
 ### 4. Crear la base de datos inicial
 
 > Nos aseguramos que MySql está UP y corriendo
 
 ```shell
+sudo systemctl status mysql
+```
+
+![image](https://user-images.githubusercontent.com/20743678/185902113-1cc3983c-6672-4c58-8917-e1784a8a6c73.png)
+
+> Entramos a la shell de MySQL
+
+```shell
 mysql -uroot -p
 ```
 
-![image](https://user-images.githubusercontent.com/20743678/185901446-a46e4c96-64b7-4aec-aa69-a57821b9794a.png)
+
 
 
