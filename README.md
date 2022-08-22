@@ -113,7 +113,7 @@ create user zabbix@localhost identified by 'password';
 grant all privileges on zabbix.* to zabbix@localhost;
 ```
 
-> Definimos la variable 'log_bin_trust_function_creators' con valor '1' y ámbito global, para que sea necesario disponer de privilegios para la creación de funciones
+> Definimos la variable 'log_bin_trust_function_creators' con valor '1' y ámbito global, para que no sea necesario disponer de privilegios de root para la creación de funciones
 
 ```shell
 SET GLOBAL log_bin_trust_function_creators = 1;
@@ -137,5 +137,35 @@ mysql -u root -p
 
 ```shell
 ALTER USER 'zabbix'@'localhost' IDENTIFIED BY 'NuevaContraseña';
+```
+
+> Cuando hicimos la instalación inicial de Zabbix, se creó una carpeta en '/usr/share/doc/zabbix-sql-scripts/mysql' donde hay unfichero con la estructura inicial de la base de datos, llamado 'server.sql.gz'. Lo descomprimimos y lo metemos a nuestra base de datos de MySQL:
+
+```shell
+zcat /usr/share/doc/zabbix-sql-scripts/mysql/server.sql.gz | mysql -uzabbix -p zabbix
+```
+
+> Una vez importado el schema, volvemos a deshabilitar la variable 'log_bin_trust_function_creators' asignándole valor '0' para incrementar la seguridad:
+
+```shell
+mysql -uroot -p
+```
+
+> Dentro de la shell de MySQL:
+
+```shell
+SET GLOBAL log_bin_trust_function_creators = 0;
+```
+
+```shell
+quit;
+```
+
+### 5. Configurar la base de datos para el servidor de Zabbix
+
+> Editamos el fichero '/etc/zabbix/zabbix_server.conf'
+
+```shell
+sudo nano /etc/zabbix/zabbix_server.conf
 ```
 
