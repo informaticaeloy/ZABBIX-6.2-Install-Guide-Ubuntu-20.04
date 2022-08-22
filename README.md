@@ -1,6 +1,6 @@
 # ZABBIX 6.2 - Install-Guide-Ubuntu-20.04
 
-### 1. Install Zabbix repository
+### 1. Instalar el repositorio Zabbix
 
 > En la URL https://www.zabbix.com/download tenemos un configurador de entorno en el que nos muestra los comandos a usar dependiendo de la elección de las opciones de que dispongamos, en nuestro caso: Zabbix 6.2, Ubuntu 20.04 (Focal), MySql y Apache Server
 
@@ -27,5 +27,18 @@
   ```
 ![image](https://user-images.githubusercontent.com/20743678/185880793-1b3e1d89-45df-4305-be0e-0b31be0e32e1.png)
 
-### 2. Install Zabbix server, frontend, agent
+### 2. Instalar Zabbix server, el frontend y el agente
+
+```shell
+sudo apt-get install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent
+```
+
+![image](https://user-images.githubusercontent.com/20743678/185893740-82c5e0cb-7a6e-4cb1-aa49-a60fdeeb9da9.png)
+
+...
+
+...
+
+![image](https://user-images.githubusercontent.com/20743678/185896267-c13c22cf-38c7-430e-add6-0304650dc8a7.png)
+
 
