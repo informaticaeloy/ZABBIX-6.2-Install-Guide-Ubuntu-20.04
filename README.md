@@ -255,6 +255,10 @@ http://192.168.46.214/zabbix
 ![image](https://user-images.githubusercontent.com/20743678/185913836-05170b49-1213-41d6-befc-b4d51d35d0cd.png)
 
 
+> Este sería un buen momento para hacer un snapshot de nuestra máquina virtual
+
+![image](https://user-images.githubusercontent.com/20743678/185914947-4154713a-dfab-47b7-b602-817487cf165e.png)
+
 
 
 
