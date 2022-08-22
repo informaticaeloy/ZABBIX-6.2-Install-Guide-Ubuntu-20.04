@@ -55,8 +55,21 @@ apt-get install mysql-server
 sudo mysql
 ```
 
+```shell
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by 'password_nuevo';
+```
+
+```shell
+exit
+```
+
 ![image](https://user-images.githubusercontent.com/20743678/185900620-9defc4f1-fdd4-4917-b21e-2b2cbded119b.png)
 
+> Configuramos la seguridad de MySQL
+
+```shell
+sudo mysql_secure_installation
+```
 
 ### 4. Crear la base de datos inicial
 
@@ -65,5 +78,7 @@ sudo mysql
 ```shell
 mysql -uroot -p
 ```
+
+![image](https://user-images.githubusercontent.com/20743678/185901446-a46e4c96-64b7-4aec-aa69-a57821b9794a.png)
 
 
