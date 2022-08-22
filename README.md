@@ -73,11 +73,13 @@ sudo mysql_secure_installation
 
 ![image](https://user-images.githubusercontent.com/20743678/185901446-a46e4c96-64b7-4aec-aa69-a57821b9794a.png)
 
+...
+
 ![image](https://user-images.githubusercontent.com/20743678/185901679-1e906ac2-0cfe-4a1a-be88-cb457b20f257.png)
 
 ### 4. Crear la base de datos inicial
 
-> Nos aseguramos que MySql está UP y corriendo
+> Nos aseguramos que MySQL está UP y corriendo
 
 ```shell
 sudo systemctl status mysql
@@ -91,6 +93,49 @@ sudo systemctl status mysql
 mysql -uroot -p
 ```
 
+![image](https://user-images.githubusercontent.com/20743678/185902506-bbbef112-bc1a-4de2-b7a1-0bd4fce4d4f9.png)
 
+> Creamos una base de datos que se llama 'zabbix'
 
+```shell
+create database zabbix character set utf8mb4 collate utf8mb4_bin;
+```
+
+> Creamos un usuario dentro de MySQL que se llama 'zabbix@localhost'
+
+```shell
+create user zabbix@localhost identified by 'password';
+```
+
+> Asignamos todos los permisos al usuario 'zabbix@localhost' en la base de datos 'zabbix'
+
+```shell
+grant all privileges on zabbix.* to zabbix@localhost;
+```
+
+> Definimos la variable 'log_bin_trust_function_creators' con valor '1' y ámbito global, para que sea necesario disponer de privilegios para la creación de funciones
+
+```shell
+SET GLOBAL log_bin_trust_function_creators = 1;
+```
+
+> Salimos de MySQL
+
+```shell
+quit;
+```
+
+![image](https://user-images.githubusercontent.com/20743678/185903268-fbc6e151-ab85-433b-a272-964c3dc43af4.png)
+
+> Si quieremos posteriormente cambiar la contraseña del usuario, entramos en la shell de MySQL con credenciales de root:
+
+```shell
+mysql -u root -p 
+```
+
+> y en la Shell de MySQL ejecutamos lo siguiente:
+
+```shell
+ALTER USER 'zabbix'@'localhost' IDENTIFIED BY 'NuevaContraseña';
+```
 
