@@ -227,6 +227,37 @@ http://192.168.46.214/zabbix
 
 ![image](https://user-images.githubusercontent.com/20743678/185912693-bf9d70b4-0067-4a1f-8f9b-3664f99ea7ba.png)
 
+> Seleccionamos el idioma (español no está habilitado)
+
+> Comprobamos que los requisitos necesarios está correctamente instalados (marcados con un 'OK')
+
+![image](https://user-images.githubusercontent.com/20743678/185913080-31c0c84f-3ca1-43d5-be72-904af6bb68ef.png)
+
+> Escribimos el password del usuario 'zabbix'
+
+![image](https://user-images.githubusercontent.com/20743678/185913205-49db9bdc-d58b-4121-9571-7d48e3218e3d.png)
+
+> Asignamos un nombre a nuestro servidor y seleccionamos la zona horaria deseada:
+
+![image](https://user-images.githubusercontent.com/20743678/185913450-0b7ac625-a26f-4d73-aac5-ad7e010494d2.png)
+
+> Confirmamos que todos está OK:
+
+![image](https://user-images.githubusercontent.com/20743678/185913521-bab90ecd-367d-443d-b4ab-d08e4cc02854.png)
+
+> Y nos congratulamos si todo está correcto XD
+
+![image](https://user-images.githubusercontent.com/20743678/185913608-98d0c69b-354c-4b8c-9d8e-6c6969a0361f.png)
+
+
+> Accedemos con usuario 'Admin' y password 'zabbix'
+
+![image](https://user-images.githubusercontent.com/20743678/185913836-05170b49-1213-41d6-befc-b4d51d35d0cd.png)
+
+
+
+
+
 
 
 
