@@ -277,10 +277,6 @@ En la web https://www.zabbix.com/la/integrations hay muchísmos módulos de inte
 
 ...
 
+![image](https://user-images.githubusercontent.com/20743678/186163752-6e651fda-e0f5-4904-af87-e23e2f22832b.png)
 
 Para muchos sistemas existen conectores que monitorizan el uso de la CPU, memoria, ubicación de IPs, ancho de banda, etc. Seguiré probando otras herramientas.
-
-
-
-
-
