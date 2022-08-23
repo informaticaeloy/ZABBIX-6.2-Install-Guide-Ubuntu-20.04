@@ -259,7 +259,15 @@ http://192.168.46.214/zabbix
 
 ![image](https://user-images.githubusercontent.com/20743678/185914947-4154713a-dfab-47b7-b602-817487cf165e.png)
 
+### 7. Conclusiones
 
+La idea final era crear un sistema de monitorización de LOGs de varios switches, pero con tiempo que he usado Zabbix, no he conseguido los resultados que buscaba.
+
+En la web https://www.zabbix.com/la/integrations hay muchísmos módulos de integración, con los que pensaba que algo podría hacer, pero son todos ellos para tratar traps SNMP, e incluso alguno de ellos está bastante desactualizado. Probé varios de ellos, y la instalación fue muy fácil, pero no es la herramienta que buscaba para almacenar mis LOGS, analizarlos y crear triggers, alertas y reports. Podéis echar un vistazo a los módulos de integración:
+
+![image](https://user-images.githubusercontent.com/20743678/186162765-e2728fad-a009-4823-823e-23d0b65e71d6.png)
+
+Para muchos sistemas existen conectores que monitorizan el uso de la CPU, memoria, ubicación de IPs, ancho de banda, etc. Seguiré probando otras herramientas.
 
 
 
