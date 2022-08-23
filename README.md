@@ -267,6 +267,17 @@ En la web https://www.zabbix.com/la/integrations hay muchísmos módulos de inte
 
 ![image](https://user-images.githubusercontent.com/20743678/186162765-e2728fad-a009-4823-823e-23d0b65e71d6.png)
 
+...
+
+![image](https://user-images.githubusercontent.com/20743678/186163448-d365ef94-bfdc-453b-abfe-c87895991e57.png)
+
+...
+
+![image](https://user-images.githubusercontent.com/20743678/186163618-63a1dc8a-227b-4dc8-b320-935a96a160c6.png)
+
+...
+
+
 Para muchos sistemas existen conectores que monitorizan el uso de la CPU, memoria, ubicación de IPs, ancho de banda, etc. Seguiré probando otras herramientas.
 
 
